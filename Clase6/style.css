@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+html{
+    box-sizing: border-box;
+}
+/* me aseguro que el box sizing se aplique  */
+*,
+a::before,
+a::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(69,129,108,1) 50%);
+}
+a{
+    color:white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.2);
+    /* perimite modificar su padding y demas  */
+    display: inline-block;
+    padding:20px 5px;
+    width:100%;
+    text-align: center;
+}
+a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.toggle{
+    display:none;
+}
+/* wrapper para que todo este en el medio */
+.wrapper{
+    /* si quiero que este centrado le tengo que dar un ancho  */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.navegacion ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.navegacion li{
+    /* quiero que ocupes en proporcion 3 todo el espacio que tenes disponible  */
+    flex: 3;
+}
+.navegacion .social{
+    /* estos se van a agrandar menos por eso tienen 1, es decir van a ser mas chicos */
+    flex:1;
+}
+
+section,footer{
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    color:white;
+    padding:20px;
+    margin:20px;
+    /* que ocupe todo  */
+    font-weight: 100;
+}
+.items{
+    margin-top: 20px;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+}
+.item{
+    /* flex se divide en 3 */
+    /* flex-grow: cuanto vas a ocupar del contenido que tenes */
+    /* flex-shrink: si le pongo 0 se achica hasta el contenido y si le pongo 1 se achica hasta donde pueda, por defecto es 1 */
+    /* flex-basis: es como el width, el contenido lo podemos dividir en porcentajes. ej tengo 4 imagenes y quiero que midan lo mismo le pongo un 25% */
+
+    /* con esto le digo: 
+    flex-grow: de tu contenedor vas a ocupar todo.
+    flex-shrink: no quiero que te achiques mas que tu contenedor; 
+    basis : vas a ocupar solo el 25% que tenes disponible */
+    flex:1 0 25%;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+}

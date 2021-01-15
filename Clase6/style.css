@@ -36,7 +36,7 @@ a:hover{
 .wrapper{
     /* si quiero que este centrado le tengo que dar un ancho  */
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .navegacion ul{
     display:flex;
@@ -52,7 +52,10 @@ a:hover{
     /* estos se van a agrandar menos por eso tienen 1, es decir van a ser mas chicos */
     flex:1;
 }
-
+input{
+    padding:10px;
+    border:0;
+}
 section,footer{
     text-align: center;
     background: rgba(0,0,0,0.3);
@@ -82,4 +85,85 @@ section,footer{
 .item img{
     width: 100%;
     height: 100%;
+    background-size: center;
+    padding:5px;
 }
+
+/* Media Queries */
+
+/* all en este caso es para todo lo anterior  */
+@media all and (max-width: 1000px){
+    .navegacion ul{
+        flex-wrap: wrap;
+    }
+    /* con esto le digo: 
+    flex-grow: de tu contenedor vas a ocupar todo.
+    flex-shrink: te achicas hasta donde puedas; 
+    basis : vas a ocupar el 50% disponible, es decir de dos en dos */
+    .navegacion li{
+        flex: 1 1 50%;
+    }
+    .items{
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: 1 1 50%;
+        /* padding:10px; */
+    }
+}
+@media all and (max-width: 500px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper > * {
+        order:999;
+    }
+    .toggle{
+        display: block;
+    }
+    .navegacion li{
+        flex-basis: 100%;
+    }
+    .navegacion ul{
+        /* flex-wrap: wrap; */
+        display: none;
+    }
+    /* como creo la clase open  */
+    .navegacion ul.open{
+        display: flex;
+    }
+    /* con esto le digo: 
+    flex-grow: de tu contenedor vas a ocupar todo.
+    flex-shrink: te achicas hasta donde puedas; 
+    basis : vas a ocupar el 50% disponible, es decir de dos en dos */
+
+    .navegacion{
+        order:1; 
+    } 
+    .top{
+        order:2;
+    }
+    
+    .details{
+        order:3;
+    }
+    .items{
+        flex-wrap: wrap;
+    }
+    .item{
+        flex: 1 1 100%;
+        /* padding:10px; */
+        max-height:300px;
+    }
+    .signup{
+
+        order:4;
+        display:flex;
+        flex-direction: column;
+    }
+    .signup input {
+        margin:5px
+    }
+}
+

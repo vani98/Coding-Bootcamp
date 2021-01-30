@@ -1,0 +1,77 @@
+body{
+    background: rgb(112,196,221);
+    background: linear-gradient(90deg, rgba(112,196,221,1) 0%, rgba(186,112,241,1) 100%);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background:white;
+    width:500px;
+    height: 300px;
+    /* para hacer que se mueva lo pongo relative */
+    position: relative;
+    /*  name = nombre de la animacion
+
+        duration = duracion de la animacion
+
+        timing-function = curva de tiempo que va a seguir la animacion.
+            ease - Empieza lento, se acelera y acaba lento otra vez (la de por defecto)
+            linear - La misma velocidad desde que empieza hasta que termina
+            ease-in - Empieza lento y acaba rápido
+            ease-out - Empieza rápido y acaba lento
+            ease-in-out - Empieza lento y acaba lento
+            cubic-bezier(n,n,n,n) - Puedes sustituir las n para establecer tus propios valores
+
+        delay = tiempo que tarda en iniciar la aplicacion
+
+        iteration-count = cuantas veces se reproduce
+
+        direction =  (Normal o reverse) Si queremos mostrar la animación en sentido contrario, desde el punto final hasta el punto de partida
+
+        fill-mode= (en segundos) es el modo en el que se hace la animacion
+            -forwards: El elemento va a retener los estilos que has puesto en el último keyframe
+            -backwards: El elemento vuelve a los estilos del primer keyframe
+            -none: El elemento no va a retener ningún estilo
+            -both: El elemento va a intentar combinar los estilos del principio y los del final
+     */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: animacion 3s 1 2s forwards;
+}
+
+@keyframes animacion{
+    /* from{
+        top:0;
+    }
+    to{
+        background-color:rgba(255,255,255,0.1);
+        width:600px;
+        top:-100px;
+    } */
+    0%{
+        left: 0;
+        top:0;
+    }
+    25%{
+        left: 300px;
+        top:0;
+        background-color:blue ;
+    }
+    50%{
+        left: 300px;
+        top:100px;
+        background-color:red ;
+    }
+    75%{
+        left: 0;
+        top:100px;
+        background-color:violet ;
+    }
+    100%{
+        left: 0;
+        top:0;
+        background-color:rgba(255,255,255,0) ;
+    }
+
+}

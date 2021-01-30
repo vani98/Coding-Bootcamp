@@ -1,0 +1,29 @@
+body{
+    background: rgb(112,196,221);
+    background: linear-gradient(90deg, rgba(112,196,221,1) 0%, rgba(186,112,241,1) 100%);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background:white;
+    width:500px;
+    height: 300px;
+    /*  transition-property = que elemento afecta? all o indicar elemento
+        transition-duration = duracion
+        transition-timing-function = curva del tiempo que sigue la transicion
+        transition-delay= despues de cuanto
+    */
+    /* transition = transition-property transition-duration transition-timing-function transition-delay */
+
+    transition:all 1.5s ease-in;
+}
+
+.box:hover{
+    background: rgba(255,255,255,0.4);
+    width: 600px;
+    height:600px;
+    border-radius: 20%;
+}
+    

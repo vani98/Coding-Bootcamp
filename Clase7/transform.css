@@ -1,0 +1,38 @@
+body{
+    background: rgb(112,196,221);
+    background: linear-gradient(90deg, rgba(112,196,221,1) 0%, rgba(186,112,241,1) 100%);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background:white;
+    width:500px;
+    height: 300px;
+    /*  >rotate = gira el elemento - ej. rotateX(90deg)
+            -rotate Z =gira el elemento el eje Z ||     ej. rotateZ(90deg) 
+            -rotate Y = gira el elemento en el eje Y || ej. rotateY(90deg)
+       >scale = aumenta o redice el tamaño del elemento (escalar). Los ejes horizontal y vertical se controlan independientemente. Los decimales menores que 1 reducen el tamaño || ej. scale(2.5, 4)
+            -scaleX = aumenta o reduce el tamaño solo en el eje x || ej. scale(2.5)
+            -scaleY = aumenta o reduce el tamaño solamente en el eje y || ej. scale(4)
+        >translate= desplzan el elemento en los dos ejes || ej. translate(10px, 20px)
+            -translateX = desplaza el elemento en el eje X
+            -translateY= desplaza el elemento en el eje Y
+        >skew= Inclinan los lados.|| ej. skew(10deg,15deg)
+            -skewX = inclina solo los lados verticales || skew(10deg)
+            -skewY = inclina solo los lados horizontales || skew(15deg)
+        >matrix= cmbina todos los elementos anteriores. Utiliza 6 parametros que se obtienen transformando las cordenadas de los vectrices en una matriz. || ej.  matrix(0,-1,-1.22,-0.88,11,11);}
+            
+    */
+    transition: all 1s ease-in-out;
+
+}
+.box:hover{
+  /* transform: rotate(25deg); */
+  /* transform: scale(1.5); */
+  /* transform: skew(5deg) */
+  /* transform: translateX(100px); */
+  /* transform: translate(100px,100px); */
+
+}

@@ -1,0 +1,69 @@
+/* nesting flexbox es flexbox dentro de flexbox dentro de flexbox */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+html{
+    box-sizing: border-box;
+}
+::before, ::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+    margin:0;
+    background: rgb(112,196,221);
+    background: linear-gradient(90deg, rgba(112,196,221,1) 0%, rgba(255,255,255,1) 100%);
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+}
+img{
+    /* las imagenes vienen inline, por eso no se les puede poner margin ni padding, por eso se transforma a block  */
+    display: block;
+    margin: 0 auto; 
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    background: rgba(0,0,0,0.2);
+}
+a:hover{
+    background: rgba(0,0,0,0.4);
+}
+.slider-nav ul{
+    list-style:none;
+    padding:0;
+    display: flex;
+}
+.slider-nav li{
+    /* con 1 ocupa todo el espacio que tiene */
+    /* flex:1; */
+    /* con 2 ocupa el doble del espacio  */
+    /* se usa flex porque su padre el ul es display flex, pero este en realidad no tiene la propiedad display flex */
+    flex:2;
+    /* ahora si  */
+    display: flex;
+}
+.slider-nav .flechita{
+    /* hacer que las flechitas ocupen menos espacio  */
+    flex:1;
+}
+.slider-nav .flechita a{
+    font-size: 40px;
+}
+.slider-nav a{
+    /* ahora teniendo el display flex en li podemos hacer que a ocupe todo  */
+    padding:20px 5px;
+    flex:1;
+      /* ¿como centro el texto? 
+        puedo poner text-align: center; pero eso no me los centra en el eje y, por eso debo hacer display flex este tambien, ¿como lo hago? poniendo las palabras dentro de un span asi es un contenedor
+    */
+    display:flex;
+    align-items: center;
+}
+.slider-nav span{
+    display: block;
+    flex:1;
+    text-align: center;
+}

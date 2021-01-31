@@ -29,10 +29,10 @@ body{
 
 }
 .box:hover{
-  /* transform: rotate(25deg); */
-  /* transform: scale(1.5); */
-  /* transform: skew(5deg) */
-  /* transform: translateX(100px); */
-  /* transform: translate(100px,100px); */
+  /*transform: rotate(25deg); */
+  /*transform: scale(1.5); */
+  /*transform: skew(5deg); */
+  /*transform: translateX(100px); */
+    /* transform: translate(100px,100px); */
 
 }

@@ -1,0 +1,32 @@
+Vamos a subir un ejercicio donde vamos a maquetar el siguiente diseño adjunto *mockuplogin.jpg*, primero realizaremos el Mockup (en Whimsical) el cual vamos a exportarlo en .jpg para compartirlo en nuestra carpeta de TP 2 y luego estructuramos con HTML5 el esqueleto del sitio y estilamos con CSS3.
+
+💻 Para la parte de etiquetas en HTML de base si o si vamos a trabajar con las siguientes:
+<article> | <img> | <form> | <a> | <link> | <input> 
+Luego si ustedes le dan otra vuelta de rosca, agregan o le dan su impronta con otros tags, mejor aún!
+
+Luego para la parte de estilar elementos tenemos 2 opciones:
+🔴 Estilar por medio de selectores: Podemos simplemente nombrar la etiqueta de HTML y aplicar las propiedades que necesitamos. ¡Ojota! dichas propiedades se aplicarán a todas las esas etiquetas del sitio. Por ejemplo esto haría que todos los párrafos del sitio tengan un tamaño de 16 pixeles.
+ej: 
+p {
+   font-size: 16px;
+}
+
+🔴 Estilar por medio de clases: Declarando una clase podemos hacer que las propiedades se apliquen sólo a lo elementos que queremos, ¡y podemos reutilizarla!
+
+ej: 
+HTML
+<p class= "peakyblinders"> Tommy Shelby</>
+
+.peakyblinders {
+   font-size: 16px;
+}
+
+--------------------------------------
+
+
+**Actualizamos al Domingo 10! y le vamos a agregar lo que aprendimos en la semana de flexbox, etc**
+
+En esta actividad solo nos entregan su link del repositorio creado con los archivos ya subidos.
+📥Existe Slack! Todas las dudas que manejen, consulten. 
+
+Saludos y #HappyCoding 🤖

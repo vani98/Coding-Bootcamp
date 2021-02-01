@@ -30,38 +30,42 @@ body{
     color:#787979;
     padding: 30px;
 }
-.input__text, .input__password{
-    font-size: 20px;
-    height: 60px; 
-    width: 100%;   
+.form__input{ 
     border-color:#EAEAE8;
     padding-left: 20px;
 }
-::placeholder {
+.form__input--big{
+    font-size: 20px;
+    height: 60px; 
+    width: 100%;  
+}
+.form__input::placeholder {
     color: #C8C9C9;
 }
-.login__button{
+.button{
     margin: 30px 0;
-    width: 100%;
-    height: 60px;
     border: none;
 }
-.login__button--blue{
-    background-color: #1C204D;
-    color:white;
+.button--big{
+    width: 100%;
+    height: 60px;
     font-size: 15px;
     font-weight: 600;
 }
-.login__button--blue:hover{
+.button--blue{
+    background-color: #1C204D;
+    color:white;
+}
+.button--blue:hover{
     background-color: #11142e;;
 }
-.login__forgot{
+.button__forgot{
     text-decoration: none;
     color: #C7C8C7;
     border:3px solid #E6E6E4;
     border-radius: 10px;
     padding:3px;
 }
-.login__forgot:hover{
+.button__forgot:hover{
     color: #787979;
 }

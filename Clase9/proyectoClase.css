@@ -13,7 +13,17 @@ body{
     margin:50px;
     letter-spacing: -1px;
 }
-.contenedor{
+.header{
+    background: #d3e0ea62;
+    color:cadetblue;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom:30px;
+}
+.header h1{
+    padding:20px;
+}
+.contenedor-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 20px;
@@ -24,8 +34,9 @@ body{
     border-radius: 8px;
     display:grid;
     grid-template-columns: 150px 1fr;
-    /* color:grey; */
     align-items: center;
+    padding:20px;
+    grid-gap: 15px;
 }
 .card__imagen{
     width: 100%;

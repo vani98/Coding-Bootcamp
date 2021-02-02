@@ -1,0 +1,16 @@
+.grid{
+    display:grid;
+    /*Al usar auto-fill todas nuestras grid seran iguales en tamaños(no personalizable)
+    Si quisieramos que todos sean iguales pondriamos... repeat(4,1fr) pero esto trae un problema no controlamos medidas min y max para eso podriamos poner repeat(4,minmax(100px,1fr)) ahora tendran valores minimos y maximos, pero cuando lleguen a su minimo no se achicaran mas, ni iran hacia abajo, para ello esta la funcion auto-fill la cual vera cuales entran y cuales manda hacia abajo.
+    usos ejemplo: galeria de imagenes */
+
+    /* auto-fit vs auto-fill: El primero ocupa todo, el segundo deja espacios vacios */
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.item{
+    padding:3rem;
+    background: #f4f4f4f4;
+    text-align: center;
+    font-size:1.4rem;
+    border:1px solid #ccc;
+}

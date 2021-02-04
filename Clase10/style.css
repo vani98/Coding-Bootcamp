@@ -1,0 +1,115 @@
+/* especifico de ciertas clases */
+
+body{
+    font-size: 15px;
+}
+
+button{
+    background: var(--color-cheto);
+    border:1px solid white;
+    padding: 10px 20px;
+    color:white;
+}
+img{
+    max-width: 100%;
+}
+
+/* ? Wrapper */
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* ? Top */
+
+.top{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'principal principal entrada1'
+    'principal principal entrada2'
+    ;
+}
+.principal{
+    grid-area: principal;
+    min-height: 400px;
+    background:white url(assets/fondo_1.jpeg);
+    background-size: cover;
+    background-position:center;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.principal> *{
+    background: var(--color-cheto);
+    padding:5px;
+}
+.entrada1{
+    grid-area: entrada1;
+}
+.entrada2{
+    grid-area: entrada2;
+}
+.entrada{
+    background: var(--color-cheto);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.entrada p{
+    margin:0;
+}
+.price{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+/* ? Menu */
+
+.menu ul{
+    display: grid;
+    grid-gap: 10px;
+    padding:0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+.menu a{
+    background: var(--color-cheto);
+    text-decoration: none;
+    /* si lo despliego como bloque puedo poner padding */
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+[aria-controls="menu-list"]{
+    display:none;
+}
+
+/* ? features */
+
+.features{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.feature{
+    background:white;
+    padding:10px;
+    text-align: center;
+}
+.feature .icon{
+    font-size: 50px;
+}
+.features p{
+    color: rgba(0,0,0,0.5)
+}
+.feature h3{
+    background: var(--color-cheto);
+}

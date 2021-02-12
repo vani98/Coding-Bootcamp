@@ -113,3 +113,113 @@ img{
 .feature h3{
     background: var(--color-cheto);
 }
+
+/* ? about */
+
+.about{
+    background: var(--color-cheto);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.about video{
+    width: 100%;
+}
+
+/* ? galeria */
+
+.gallery{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* hacer que las imagenes ocupen lo mismo */
+
+.gallery img{
+    width: 100%;
+}
+
+.gallery h2{
+    /* desde el inicio hasta el final */
+    grid-column: 1/-1;
+    /* el grid esta para hacer las lineas  */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+    /* lineas con before y after */
+.gallery h2::before, .gallery h2::after{
+    /* que nada se ponga al lado  */
+    display: block;
+    content: "";
+    height: 10px;
+    background: linear-gradient(to var(--direction,left),#1cb5e0,transparent);
+}
+.gallery h2::after{
+    --direction:right;
+}
+
+@media(max-width:1000px){
+    .menu{
+        /* sube el menu  */
+        order:-1;
+        /* efecto 3d  */
+        perspective: 800px;
+    }
+    [aria-controls="menu-list"]{
+        display:block;
+        margin-bottom: 10px;
+    }
+    .menu ul{
+        /* hace que el ul rote 90 cuando esta false*/
+        transform: rotateX(90deg);
+        transition: all 0.5s;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    [aria-expanded="true"] ~ ul{
+        /* lo muestra cuando esta true */
+        display: grid;
+        max-height: 500px;
+        transform: rotateX(0);
+    }
+    /* oculto la x y la hamburgesa segun sea el caso(hecho manual) */
+
+    /* si no esta activado no te muestres  */
+    [aria-expanded="false"] .close{
+        display: none;
+    }
+    [aria-expanded="true"] .close{
+        display: inline-block;
+    }
+    [aria-expanded="true"] .open{
+        display: none;
+    }
+    [aria-expanded="false"] .open{
+        display: inline-block;
+    }
+}
+@media(max-width:700px){
+    .top{
+        grid-template-areas: 
+        'principal principal'
+        'entrada1 entrada2'
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:500px){
+    .top{
+        grid-template-areas: 
+        'principal'
+        'entrada1'
+        'entrada2';
+    }
+}

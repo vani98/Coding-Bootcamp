@@ -25,32 +25,42 @@ body{
 }
 .login__h1{
     font-size:28px; 
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color:#787979;
-    padding: 30px;
+    padding: 25px;
 }
 .form__input{ 
     border-color:#EAEAE8;
     padding-left: 20px;
+    border:1px solid #bbbbbb83;
 }
 .form__input--big{
     font-size: 20px;
     height: 60px; 
-    width: 100%;  
+    width: 100%;
 }
+.form__input--topR{
+    border-radius: 10px 10px 0px 0px;
+}
+.form__input--bottomR{
+    border-radius: 0px 0px 10px 10px;
+}
+
 .form__input::placeholder {
     color: #C8C9C9;
 }
 .button{
     margin: 30px 0;
-    border: none;
+    border: 0;
+    background: none;
 }
 .button--big{
     width: 100%;
     height: 60px;
     font-size: 15px;
     font-weight: 600;
+    border-radius: 5px;
 }
 .button--blue{
     background-color: #1C204D;
@@ -61,7 +71,7 @@ body{
 }
 .button__forgot{
     text-decoration: none;
-    color: #C7C8C7;
+    color: #bbbbbb;
     border:3px solid #E6E6E4;
     border-radius: 10px;
     padding:3px;

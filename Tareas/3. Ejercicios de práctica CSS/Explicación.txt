@@ -1,0 +1,8 @@
+En esta tarea, tendrán que:
+* Crear un navbar con HTML y CSS, respetando la estructura semántica que aprendimos durante las clases (no se olviden del <navbar></navbar> como nuestra etiqueta "padre").
+* Crear tres versiones de un botón:
+(a) Redondo
+(b) Rectangular con bordes redondeados
+(c) Con fondo transparente.
+
+Les adjunto las muestras.

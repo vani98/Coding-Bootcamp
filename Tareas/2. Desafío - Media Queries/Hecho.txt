@@ -1,0 +1,8 @@
+Con los documentos adjuntos, tenemos que modificar el card para que cuando esté en versión mobile, el texto esté por debajo de la imagen!
+Les dejamos fecha hasta el próximo martes para que puedan practicar el finde (Si quieren, pueden sumarle un nav y un footer completito).
+
+Saludos!
+
+___________________________________________
+
+Realizado directamente en la clase 9

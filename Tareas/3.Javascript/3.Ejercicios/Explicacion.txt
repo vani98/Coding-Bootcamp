@@ -1,0 +1,129 @@
+Buenas, les dejamos a continuación una serie de ejercicios para que puedan practicar e ir calentando motores para el proyecto integrador.
+
+🚀 Es interno para que c/u de ustedes practique uno por uno, no es necesario entregar.
+
+Practiquen por sobre todas la cosas y cualquier inquietud, estamos en Slack para acompañarlos.
+
+- NOMBRE Y OPERACIONES:
+Pasos:
+Pedir nombre mediante prompt y disparar un alert con algún texto más
+Pedir un número y sumarlo a otro que esté en una variable
+Pedir un número y restarlo a otro que esté en una variable
+Pedir un numero, luego otro y ambos sumarlos
+
+-SINTAXIS Y VARIABLES:
+Realizar una calculadora que pueda sumar, restar, dividir y multiplicar.
+
+Pasos:
+Deberá ingresar un valor mediante un prompt
+Deberá ingresar otro valor mediante otro prompt
+Mostrar el resultado de cada operación mediante distintos alert
+
+
+- DÍAS DE LA SEMANA:
+Crear un array con todos los días de la semana
+Recorrerlos y mostrar cuando sea domingo o sábado un mensaje en consola.
+
+--------------------------------------------------------------------------------------------
+
+INTEGRADOR FÁCIL:
+Se deberá aplicar todo lo aprendido con los ejercicios anteriores.
+- Deberá poder ingresar un día de la semana
+- Deberá poder compararlo con todos los días de la semana
+- Deberá evaluar si es un día de semana y fin de semana mediante un mensaje similar
+a 'El día es hábil' sino 'El día es fin de semana';
+En caso de encontrar el día utilizar la sentencia break y terminar el for.
+
+PEQUEÑAS FUNCIONES:
+- Crear una función que pida nombre y apellido y lo muestre en la consola
+- Crear una función que en base a un parámetro muestre los días hábiles
+o de fines de semana en consola
+
+CREAR UN ARRAY DE PELÍCULAS:
+- Crear una función que agregue una película al array de películas
+- La película deberá tener un ID y un Título
+- Crear una función que evalúe antes de agregar que la película
+no fue ingresada previamente
+- Crear una función que ordene las películas por Título y por ID
+- Crear una función que elimine una película por su ID.
+
+
+MEJORAR LA CALCULADORA SEPARANDO EN FUNCIONES CADA OPERACIÓN:
+- Deberá poder ingresar 2 valores
+- Deberá poder ingresar que operación quiere realizar
+- Cada operación tendrá que ser una función con los 2 parámetros
+para sumar, restar, multiplicar o dividir;
+- Deberá mostrar el resultado de la operación en consola.
+
+HACER UN OBJETO QUE REPRESENTE UN AUTO:
+- Deberá tener las propiedades color, modelo, patente, marca, prendido,
+velocidad y velocidad máxima
+- Deberá tener los métodos encender, acelerar, mostrar velocidad actual, frenar y apagar
+- Por lo tanto mediante el método acelerar tendrá que ir aumentando
+la velocidad hasta llegar a la velocidad máxima.
+
+CREAR UNA FUNCIÓN QUE AGREGUE OBJETOS : PELÍCULAS:
+- El objeto película Deberá tener ID, titulo, descripción, año, duración, actores, director
+- Deberá tener métodos para editar todas sus propiedades, menos su ID,
+y para los actores tendrá que ir agregando uno a uno.
+
+CREAR UNA FUNCIÓN PARA CARGAR AUTOS EN UN CAMIÓN:
+- El auto tendrá que tener al menos patente y peso
+- El camión tiene un peso máximo de carga
+- El objeto camión deberá validar con cada auto ingresado si está por debajo
+del peso o si ya no lo puede agregar
+- Además de almacenar los autos debe tener la posibilidad de validar que
+no tenga patentes repetidas y que me devuelva todas las patentes que tiene a bordo.
+
+----
+1- Crea una variable "nombre" asignar un valor del tipo string. Luego imprime el valor en la consola.
+
+3- Crea dos variables una "nombre" y otra "apellido" asignar valores del tipo string. Crea una tercer variable que sea "nombre completo" (en camelcase) asignar un valor del tipo string que sea el resultado de concatenar los valores de las primeras dos variables.
+Imprimir resultado en la consola.
+
+4. crea una variable cualquiera asignar un valor del tipo string, imprimir en consola el valor en mayusculas.
+
+5. crea una variable cualquiera asignar un valor del tipo string, imprimir en consola el valor de su cantidad de caracteres.
+
+6. Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por consola los doce meses, imprimiendo 1 a 1
+
+7. Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por consola los doce meses, utilizando un for loop
+
+8. Dado el siguiente código escribe las condiciones para que siempre sean correctas.
+
+let num1 = 5;
+let num2 = 8;
+
+if(...) {
+console.log("num1 no es mayor que numero2");
+}
+if(...) {
+console.log("num2 es positivo");
+}
+if(...) {
+console.log("num1 es negativo o distinto de cero");
+}
+if(...) {
+console.log("Incrementar en 1 unidad el valor de num1 no lo hace mayor o igual que num2");
+}
+
+9. Crear un array llamado números, con los valores del 1 al 10 utiliza un for of para recorrer el array, en cada iteración deberias imprimir en la consola el resultado del la multiplicación del numero actual por el numero 5.
+
+10. Crea un objeto persona con los propiedades nombre, apellido, edad, imprime el el objeto en la consola.
+
+11. En el objeto persona creado en el ejercicio anterior, agregar la propiedad dni con un valor numerico. Imprime el objeto en la consola.
+
+12. Al objeto persona que hemos creado, debes modificar el valor de la propiedad apellido. Imprimir el resultado en la consola.
+
+13. En el objeto persona que hemos creado, elimina la propiedad nombre. Imprimir el resultado en la consola.
+
+14. Crea una función que retorne el valor de la suma de dos números enteros, asigna el valor de retorno a una variable. Imprime el valor de la variable en la consola.
+
+15. Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Imprimir el resultado en la consola.
+
+16. Escribir el código de una función a la que se pasa como parámetro un Array de enteros y devuelve como resultado la sumatoria de todos los numero del array.
+Imprimir el resultado en la consola.
+
+17. Escribir el código de una función llamada "contar" a la que se pasa como parámetro un numero entero, esta función debe imprimir en consola la secuencia de números desde 0 hasta el numero que recibió como parametro.
+------
+Saludos 🚀

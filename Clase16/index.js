@@ -74,16 +74,18 @@ let arr = retornaMuchos();
 
 //Ejemplo de función con varios parámetros que devuelva un array
 function cuadrados(...argumento) {
-  miArray = [];
+  //tomo lo que me venga
+  miArray = []; //creo un array para guardar esos valores
   for (let index = 0; index < argumento.length; index++) {
-    miArray.push(argumento[index] * argumento[index]);
+    miArray.push(argumento[index] * argumento[index]); //cada vez que pasen por el for los voy agregando, pero al cuadrado.
   }
   return miArray;
 }
 
-let arrCuadrados = cuadrados(1, 2, 3, 4, 5);
+// let arrCuadrados = cuadrados(1, 2, 3, 4, 5);
+// console.log(arrCuadrados);
 let [valor1, valor2, valor3] = cuadrados(5, 4, 3); //destructuring en array
-// console.log(valor1);
+console.log(valor1);
 // console.log(valor2);
 // console.log(valor3);
 
@@ -114,6 +116,7 @@ function esRojo3(color) {
 }
 // console.log(esRojo3("rojo"));
 
+//------------ INCLUDES
 //Ejemplo de validar personas
 //Requisitos: Contraseña mayor a 8 caracteres, sin espacios en blanco, no puede contener el nombre del usuario
 

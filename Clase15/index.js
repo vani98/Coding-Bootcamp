@@ -1,6 +1,6 @@
 //Cuando tenemos que mapear datos utilizamos arrays, objetos u ambos
 
-// ARRAY - primer estructura de datos
+//....... ARRAY - primer estructura de datos
 let miArray = new Array("campera", "mochila", "lapicera"); //forma anterior, no se usa
 // console.log(miArray);
 let miOtroArray = ["fiat", "peugeot", "ford"]; //mejor forma
@@ -16,6 +16,9 @@ console.log("Mensaje de: " + arrayChat[0][0]+ "  Hora: " + arrayChat[0][1]+ "\n"
 console.log("--");
 //mostrar el primer mensaje del usuario2
 console.log("Mensaje de: " + arrayChat[1][0]+ "  Hora: " + arrayChat[1][1]+ "\n" + arrayChat[1][2]);
+
+//....... PUSH
+
 //agregar mensaje del usuario1
 arrayChat.push(['Usuario1','11:04','todo bien, escuchando una clase']);
 //muestro respuesta
@@ -27,19 +30,33 @@ console.log("Mensaje de: " + arrayChat[2][0]+ "  Hora: " + arrayChat[2][1]+ "\n"
 arrayChat.push(["Usuario1", "11:04", "todo bien, escuchando una clase"]);
 arrayChat.push(["Usuario2", "11:10", "genial! ¿y sobre qué escuchas?"]);
 arrayChat.push(["Usuario1", "11:12", "Sobre JS"]);
+
+//....... UNSHIFT
+
 //agregar al inicio del array
 arrayChat.unshift(["Usuario2", "23:02", "Buenas noches!"]);
 arrayChat.unshift(["Usuario1", "23:00", "Que descanses, buenas noches!"]);
-//sacar al primero del array
+
+//....... POP
+
+//sacar al último del array
 arrayChat.pop();
-//sacar el último del array
+
+//....... SHIFT
+
+//sacar el primero del array
 arrayChat.shift();
+
+//....... SPLICE
+
 //splice (indice start, indice a borrar, nuevo valor), se usa para reemplazar, se utiliza para asignarlo a otra variable
 //desde el indice uno hasta el 2 reemplazalo por esto
 // console.log(arrayChat); //como estaba
 let miOtroChat = arrayChat.splice(0, 2, ["Usuario1", "00:00", "Good Morning"]);
 // console.log(miOtroChat); //los que saco
 // console.log(arrayChat); //los que quedan
+
+//....... FOR OF
 
 //Lo mismo de antes con un for of
 
@@ -51,12 +68,14 @@ let miOtroChat = arrayChat.splice(0, 2, ["Usuario1", "00:00", "Good Morning"]);
 //     console.log("Mensaje de: "+ usuario + "    Hora: "+ hora +"\n"+mensaje+ "\n");
 // };
 
-//slice
+//....... SLICE
+
 let arrayMuebles = ["Armario", "Mesa", "Silla", "Cómoda", "Mesa de luz"];
 // console.log(arrayMuebles.slice(0));
-// console.log(arrayMuebles.slice(0,2));
+// console.log(arrayMuebles.slice(0, 2));
+// console.log(arrayMuebles.slice(0, 4));
 
-//indexof
+//..... INDEXOF
 
 // console.log(arrayMuebles.indexOf("Mesa"));
 // console.log(arrayMuebles.indexOf("Biblioteca")); //Si no está tira -1
@@ -67,11 +86,18 @@ let arrayMuebles = ["Armario", "Mesa", "Silla", "Cómoda", "Mesa de luz"];
 //     console.log("Si lo tenemos");
 // };
 
-//includes
+//..... INCLUDE
+
 let arrayMisNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 10, 23, 12, 43, 53, 14];
 // console.log(arrayMisNumeros.includes(6)); //evita hacer el if en index of
 
-//concatenar arraysTambién puede iniciarse el trámite de manera digital. Una vez cargados los datos, el Registro le enviará un correo electrónico al comprador para que las partes concluyan el trámite de manera presencial. Finalmente, para calcular cuánto hay que pagar para transferir hay que entrar en https://panoramaregistral.com.ar/servicios/estimador/
+// if (arrayMisNumeros.includes(6)) {
+//   console.log("El 6 está");
+// } else {
+//   console.log("No está");
+// }
+
+//...... CONCAT
 
 let articulosInterior = [
   "Juego de comedor",
@@ -84,9 +110,13 @@ let articulosExterior = ["Columpio", "Mesa de exterior", "Silla para exterior"];
 // articulosTodos = articulosExterior.concat(articulosInterior);
 // console.log(articulosTodos);
 
+//.......... SPREAD OPERATOR
+
 //lo mismo con spread operator
 let articulosTodos = [...articulosExterior, ...articulosInterior];
 // console.log(articulosTodos);
+
+//....... REFERENCE TYPES
 
 //Reference types, js guarda el valor de los primitivos, de los que no son primitivos solo guarda la posicion en memoria
 let color = "rojo"; //variable tipo valor, guarda el valor
@@ -110,8 +140,8 @@ arrayLetras.push("D"); // ¿Porqué el array con const permite que le agregen da
 // arrayLetras = ["X","Y","Z"]; //¿Porqué no lo permite con reasignación?
 //Porque en el push lo que hago es agregar un valor a una direccion en memoria, pero en la reasignación le estoy cambiando la direccion de memoria y esto tira error.
 
-//1:57:53
-//Objetos
+//...... OBJETOS
+
 //Son conjuntos de datos como los arrays pero del tipo key - value (llave-valor)
 //forma de declarar un objeto
 // let miObj = new Object();
@@ -154,7 +184,7 @@ let inputUserValue = "rojo";
 // console.log(colores[inputUserValue]); //de esta forma puedo hacerlo más dinámico
 // console.log(colores.rojo); //si yo se las propiedades que ingresan esta es la mejor
 
-//objetos complejos
+//------- OBJETOS COMPLEJOS
 const alumno = {
   nombre: "Nicolas",
   materias: ["algebra", "analisis matemático", "química", "física"],

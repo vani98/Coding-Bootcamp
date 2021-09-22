@@ -1,0 +1,11 @@
+$primary: #6610f2;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.carousel-item img {
+  height: 400px;
+}
+.footer {
+    padding: 2.5rem;
+    color: #999;
+    background: #f9f9f9;
+}

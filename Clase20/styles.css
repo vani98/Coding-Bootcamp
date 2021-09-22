@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(55, 0, 140);
+  background: linear-gradient(
+    0deg,
+    rgba(55, 0, 140, 09934348739495799) 0%,
+    rgba(12, 100, 204, 1) 100%
+  );
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.header {
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #53ccfc 2px solid;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+/* cards */
+.contenedor-grid {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  grid-gap: 15px;
+  padding: 20px;
+}
+.card_imagen {
+  width: 100%;
+}
+.card_imagen:hover {
+  width: 155px;
+}
+
+/* footer  */
+.footer {
+  margin-top: 50px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100px; */
+  background: rgba(255, 255, 255, 0.2);
+  padding: 60px 0;
+}
+.footer a:hover {
+  color: #53ccfc;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a {
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .navbar ul {
+    justify-content: center;
+    padding: 0;
+  }
+  .contenedor-grid {
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card_imagen a:hover {
+    width: 100%;
+  }
+}

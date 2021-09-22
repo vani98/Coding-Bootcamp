@@ -92,6 +92,7 @@ const alumnos = {
     let materias = Object.keys(this.notas); //devuelve algebra, fisica, quimica
     return (
       materias
+        //No podemos tener una funcion normal, porque this referenciaría a windows, el => respeta el contexto en el que se está ejecutando, con la función normal no sabe a que referenciar con el this
         .map((materia) => {
           return this.notas[materia]; //alumno.notas["algebra"] en la primer iteracion
         }) //devuelve 10, 8,10

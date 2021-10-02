@@ -1,0 +1,18 @@
+h1 {
+  color: Red;
+  font-size: 30px;
+}
+#todos {
+  max-width: 300px;
+  border: 1px solid purple;
+}
+.todo {
+  color: rebeccapurple;
+  font-size: 25px;
+}
+/* linea 124 de main.js agrego todo el css acá */
+.realizado {
+  color: gray;
+  opacity: 50%;
+  text-decoration: line-through;
+}

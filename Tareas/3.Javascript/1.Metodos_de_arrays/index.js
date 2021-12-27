@@ -57,7 +57,7 @@ for (const mov in movimientos) {
     totalIngresos += movimientos[mov].monto;
   }
 }
-console.log(totalIngresos);
+console.log(`El total de ingresos es de: ${totalIngresos}`);
 
 //total de extracciones
 
@@ -66,9 +66,9 @@ for (const mov in movimientos) {
     totalExtracciones += movimientos[mov].monto;
   }
 }
-console.log(totalExtracciones);
+console.log(`El total de extracciones es de: ${totalExtracciones}`);
 
 //estado final de la cuenta
 
 estadoCuenta = totalIngresos - totalExtracciones;
-console.log(estadoCuenta);
+console.log(`El estado actual de la cuenta es: ${estadoCuenta}`);
